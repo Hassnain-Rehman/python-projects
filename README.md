@@ -10,3 +10,4 @@ Small standalone Python projects built for practice.
 - password_generator.py - Customizable password generator (loops, random/string modules, input validation)
 - Math Quiz Game — A command-line quiz with 3 difficulty levels (easy/medium/hard), randomized 
 questions using +, -, *, and /, input validation, scoring out of 5, and a play-again loop.
+- Weather_app.py - Live weather lookup by city using the wttr.in API (requests module, JSON parsing, error handling, input loop)
