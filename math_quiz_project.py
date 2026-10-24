@@ -1,3 +1,4 @@
+#Math-Quiz Project..
 import random
 
 def get_numbers(difficulty):
@@ -21,8 +22,6 @@ def calculate_answer(num1, num2, operation):
         case "+":
             return num1 + num2
         case "-":
-            if num1 < num2:
-                num1, num2 = num2, num1
             return num1 - num2
         case "*":
             return num1 * num2
@@ -33,6 +32,14 @@ def generate_question(difficulty, question_number):
     print(f"question {question_number} of 5")
     num1, num2 = get_numbers(difficulty)
     operation = get_operation(difficulty)
+
+    if operation == "-" and num1 < num2:
+        num1, num2 = num2, num1
+
+    if operation == "/":
+        num2 = random.randint(1, 10)
+        num1 = num2 * random.randint(1, 10)
+
     answer = calculate_answer(num1, num2, operation)
 
     while True:
@@ -71,10 +78,10 @@ def main():
             print("Keep practicing!")
 
 
-        play_again = input("Would you like to play again? (y/n): ").lower()
+        play_again = input("Would you like to play again? (y/n): ").strip().lower()
 
         while play_again not in ["y", "n"]:
-            play_again = input("Please enter y or n: ").lower()
+            play_again = input("Please enter y or n: ").strip().lower()
 
 
         if play_again == "n":
