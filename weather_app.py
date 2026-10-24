@@ -36,16 +36,20 @@ def show_weather(city):
     print("-" * 30)
 
 
-while True:
-    city = input("Enter city name or 'quit' to stop: ").strip()
+def main():
+    while True:
+        city = input("Enter city name or 'quit' to stop: ").strip()
 
-    if city == "":
-        print("Please enter a city name.")
-        continue
+        if city == "":
+            print("Please enter a city name.")
+            continue
 
-    if city.lower() == "quit":
-        print("OK, Goodbye!")
-        break
+        if city.lower() == "quit":
+            print("OK, Goodbye!")
+            break
 
-    show_weather(city)
+        show_weather(city)
 
+
+if __name__ == "__main__":
+    main()
