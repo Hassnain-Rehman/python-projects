@@ -8,7 +8,7 @@ A collection of My Python projects I built while learning Python.
 - `rock_paper_scissors.py` — Rock, Paper, Scissors game using functions, conditionals, loops, and the `random` module.
 - `password_generator.py` — Customizable secure password generator with strength checking, input validation, and replay support.
 - `math_quiz_project.py` — Command-line quiz with three difficulty levels, random math questions, scoring, input validation, and a play-again loop.
-- - `phishing_checker.py` — Phishing message checker that scans text for scam-style keywords, gives a Safe / Suspicious / Dangerous verdict with reasons, and uses regex for whole-word matching.
+- `phishing_checker.py` — Phishing message checker that scans text for scam-style keywords, gives a Safe / Suspicious / Dangerous verdict with reasons, and uses regex for whole-word matching.
 - `weather_app.py` — Live weather lookup by city using the wttr.in API, `requests`, JSON parsing, error handling, and an input loop.
 
 ## Requirements
