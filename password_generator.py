@@ -76,3 +76,5 @@ def generate_password(length, use_digits, use_symbols):
 
 if __name__ == "__main__":
     main()
+
+#<<<>>>
