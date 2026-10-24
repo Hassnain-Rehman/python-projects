@@ -3,18 +3,25 @@ import random
 
 def main():
     choices = ["rock", "paper", "scissors"]
-    player = get_player_choice(choices)
-    computer = random.choice(choices)
 
-    print(f"You chose: {player}")
-    print(f"Computer chose: {computer}")
+    while True:
+        player = get_player_choice(choices)
+        computer = random.choice(choices)
 
-    print(get_winner(player, computer))
+        print(f"You chose: {player}")
+        print(f"Computer chose: {computer}")
+        print(get_winner(player, computer))
+
+        again = input("Play again? (y/n): ").strip().lower()
+
+        if again != "y":
+            print("Thanks for playing!")
+            break
 
 
 def get_player_choice(choices):
     while True:
-        player = input("Rock, Paper, or Scissors? ").lower()
+        player = input("Rock, Paper, or Scissors? ").strip().lower()
         if player in choices:
             return player
         print("Please choose rock, paper, or scissors.")
@@ -36,4 +43,7 @@ def get_winner(player, computer):
         return "Computer wins!"
 
 
-main()
+if __name__ == "__main__":
+    main()
+
+#<<<>>>
